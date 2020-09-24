@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            text-align: center;
+            height: 120px;
+        }
+        .advance{
+            background-color: rgb(109, 108, 108);
+            color: white;
+            height: 50px;
+            font-size: 30px;
+        }
+        .space{
+            background-color: rgb(231, 229, 229);
+        }
+        
+        form{
+            background-color: gainsboro;
+            height: 800px;
+        }
+        select.selection{
+            border-radius: 5px;
+            text-align: center;
+            font-size: 25px;
+            color: black;
+            background-color: beige;
+            width: 400px;
+            height: 35px;
+            margin-left: 20px;
+        }
+        option{
+            font-size: 20px;
+            
+        }
+        .first{
+            font-size: 25px;
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+        }
+         .last{
+            margin-left:20px;
+            
+        } 
+        button{
+            border-radius: 15px;
+            font-size: 25px;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            background-color: whitesmoke;  
+            margin-left: 10px;
+            margin-right: 10px;  
+            
+        }
+        .press_x{
+            width: 100px;
+            border-radius: 15px;
+            font-size: 25px;
+            height: 30px;
+            background-color: whitesmoke;  
+            margin-left: 10px;
+            margin-right: 10px;  
+        }
+        .press_fx{
+            width: 100px;
+            border-radius: 15px;
+            font-size: 25px;
+            height: 30px;
+            background-color: whitesmoke;  
+            margin-left: 10px;
+            margin-right: 10px;  
+        }
+        .trigonometry{
+            width :100px;
+            height: 40px;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>
+        <div class="advance"> Advanced Mode </div>
+        <div class="space"> This Is Space </div>
+        <div class="text">This is text box</div>
+    </h1>
+    
+    <form action="">
+        <div class="first">
+            <select  class="selection" id="">
+                <option value="1">Degrees</option>
+                <option value="2">Volume</option>
+                <option value="3">Mass</option>
+                <option value="4">Duration</option>
+                <option value="5">Angle</option>
+            </select>
+        </div>
+        <div class="first">to</div>
+        <div class="first">
+            <select class="selection" id="">
+                <option value="1">Radians</option>
+                <option value="2">Degrees</option>
+                <option value="3">Gradians</option>
+            </select>
+        </div>
+
+        <div class="first">↔</div>
+        <div class="first last">0 degrees = 0 radians</div>
+        <br>
+        <div  class ="first">
+        <button>↓n</button>
+        <button>↑n</button>
+        <button>×10 <sup>y</sup></button>
+        <button>mod</button>
+        <button>⤶</button>
+        <button>C</button>
+        <button class="trigonometry">cos</button>
+        <button class="trigonometry">sin</button>
+        <button class="trigonometry">tan</button></div>
+        <br>
+        <div class ="first">
+        <button>7</button>
+        <button>8</button>
+        <button >9 </button>
+        <button >÷</button> 
+        <button >(</button>
+        <button >)</button>
+        <button class="trigonometry">sinh</button>
+        <button class="trigonometry">cosh</button>
+        <button class="trigonometry">tanh</button></div>
+        <br>
+        <div class ="first">
+            <button >4</button>
+        <button >5</button>
+        <button >6 </button>
+        <button >×</button>
+        <select class="press_x" ><option value="1"> <i>X</i> </option></select>
+        <button ><i>X </i><sup>-1</sup> </button>
+        <button ><i>X</i>!</button>
+        <button >|<i>X</i>|</button>
+        <button >Arg</button></div>
+  
+        <div class ="first">
+            <button >1</button>
+        <button >2</button>
+        <button >3 </button>
+        <button >-</button>
+        <button > ⨅ </button>
+        <button ><i>e</i></button>
+        <button ><i>X </i><sup>y</sup> </button>
+        <button >√</button>
+        <button >log</button>
+        <button >ln</button></div>
+        <br>
+        <div  class ="first">
+        <button>0</button>
+        <button>.</button>
+        <button> <i>i</i> </button>
+        <button>+</button>
+        <button> = </button>
+        <button >a×b</button>
+        <button>Re  </button>
+        <button >lm</button>
+        <button >conj</button> 
+        <select class="press_fx"><option value="1">f(x)</option></select>
+    </div>
+
+
+    </form>
+</body>
+</html>
