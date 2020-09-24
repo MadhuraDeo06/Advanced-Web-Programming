@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+   <style>
+       *{
+           font-family: Arial, Helvetica, sans-serif;
+       }
+   </style>
+</head>
+<body>
+    <h1>
+        Question 8
+    </h1>
+    <script>
+       function positiveOrNegative(num1)
+       {
+           if(num1<0)
+           {
+               console.log(`${num1} is Negative`)
+           }
+           else if(num1>0){
+               console.log(`${num1} is Positive`)
+           }
+           else if(num1==0){
+            console.log(`${num1} is Zero`)
+           }
+           else{
+               console.warn(`${num1} = Enter proper number`)
+           }
+       }
+       positiveOrNegative(20)
+       positiveOrNegative("text1")
+       positiveOrNegative("text")
+       positiveOrNegative("30")
+       positiveOrNegative(-7)
+    </script>
+</body>
+</html>

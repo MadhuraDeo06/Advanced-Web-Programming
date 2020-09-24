@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Question 9</h1>
+    <script>
+
+        function palindrome(num)
+        {
+            let temp=num
+            let ans=0
+            while(num!=0)
+            {
+                let rem=num%10
+                ans=ans*10+rem
+                num=parseInt(num/10)
+
+            }
+            if(temp==ans)
+            {
+                console.log(`${temp} is Palindrome`)
+            }
+            else
+            {
+                console.log(`${temp} is not Palindrome`)
+
+            }
+        } 
+        palindrome(32123)
+        palindrome(90876)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Question 2</h1>
+
+    <script>
+        function placeValue(number)
+        {
+            let div = []
+            let mod
+            for(let index=0; index<4; index++)
+            {
+                mod = number%10
+                number/=10;
+                div.push(parseInt(mod))
+            }
+            console.log(div[3], div[2], div[1], div[0]) 
+        }
+        placeValue(9361)
+        function faceValue(number)
+        {
+            let div = []
+            let mod
+            let num=number
+            for(let index=0; index<4; index++)
+            {
+                mod = number%10
+                number/=10;
+                div.push(parseInt(mod))
+            }
+            console.log(`${num} = ${div[3]*1000} + ${div[2]*100} + ${div[1]*10} + ${div[0]}`) 
+        }
+        faceValue(9361)
+        function reverseValue(number)
+        {
+            let div = []
+            let mod
+            let num=number
+            for(let index=0; index<4; index++)
+            {
+                mod = number%10
+                number/=10;
+                div.push(parseInt(mod))
+            }
+            console.log(div[0],div[1],div[2],div[3]) 
+        }
+        reverseValue(9361)
+        
+    </script>
+</body>
+</html>

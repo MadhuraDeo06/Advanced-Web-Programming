@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+   <style>
+       *{
+           font-family: Arial, Helvetica, sans-serif;
+       }
+   </style>
+</head>
+<body>
+    <h1>
+        Question 5
+    </h1>
+    <script>
+        function cToF(celcius)
+        {
+            let faherheit
+            faherheit = (9*celcius)/5
+            console.log(`Celcius to Faherheit ${celcius}C  = ${faherheit+32}F`)
+        }
+        cToF(75)
+        function fToC(faherheit)
+        {
+            let celcius
+            celcius=(faherheit-32)*5
+            console.log(`Faherheit to Celcius ${faherheit}F  = ${celcius/9}C`)
+        }
+        fToC(167)
+    </script>
+</body>
+</html>
