@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css ">
+    <style>
+        
+        #final_amount{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-shadow: 5px 2px 5px #b55fee;
+            color:rgb(66, 31, 100);
+            text-align: right;
+            font-size: 50px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        h2{
+            box-shadow: 5px 5px 5px 2px rgb(131, 64, 78);
+            background-color:  rgb(188, 130, 214);
+            text-align: center;
+            text-decoration: underline;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px;
+            padding: 20px;
+            border: solid rgb(91, 2, 99) ;
+            border-radius: 15px;
+        }
+        body{ 
+            background-image: url('images/image1.jpg');
+           background-repeat: no-repeat;
+           background-size: cover;
+            
+        }
+        label{
+            font-size: 20px;
+        }
+        .container
+        {
+            background-attachment: fixed;
+        }
+        div.form-1{
+            box-shadow: 5px 5px 5px 10px rgb(90, 44, 53);
+            background-color: rgb(213, 146, 245);
+            margin: 20px;
+            padding: 20px;
+            border:  solid rgb(91, 2, 99)  ;
+            border-radius: 15px;
+        }
+        input#totalAmt{
+            max-width: 300px;     
+            padding: 20px;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1tag">Assignment 9</h1>
+            
+        
+        <h2>Calculator</h2>
+        <div class="form-1" >
+            <div class="form-action">
+                <label for="bill">How Much Was Your Bill?</label>
+                <div class="input-group">
+                    <input type="number" id="inputAmt" class="form-control" placeholder="Enter Amount Here">
+                    <span class="input-group-addon">₹</span>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="form-action">
+                <label for="tip">Tip To Waiter</label>
+                <div class="input-group ">
+                    <input type="number" id="tip" class="form-control" placeholder="Enter Amount Here">
+                    <span class="input-group-addon">₹</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-action">
+                <label for="person">How Many People Sharing The Bill?</label>
+                <div class="input-group">
+                    <input type="number" id="person" class="form-control" placeholder="Enter Count Here">
+                    <span class="input-group-addon">People</span>
+                </div>
+            </div>
+
+            <br>
+            
+            <div>
+                <button onclick="calculateAmount()" class="btn btn-success">Calculate</button>
+            </div>
+
+            <br>
+            
+            <div id="Total-amount">
+                <label for="totalAmt">Contribution Per Person</label>
+                <input type="number" id="totalAmt" class="form-control" placeholder="Read Only" readonly>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <script>
+        function calculateAmount()
+        {
+            const inputAmount = parseFloat( document.getElementById('inputAmt').value)
+            const tipAmount = parseFloat(document.getElementById('tip').value)
+            const countOfPerson = parseFloat( document.getElementById('person').value)
+            let contributionAmt = (inputAmount + tipAmount) / countOfPerson
+
+            const sharedBill = document.getElementById('totalAmt')
+            sharedBill.value = parseFloat (contributionAmt)
+        }
+    </script>
+    
+</body>
+</html>
