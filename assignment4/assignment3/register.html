@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="download.jpeg">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+        }
+        form{
+            margin: auto;
+            border-color: black;
+            border-radius: 10px ;   
+        }
+        .form-auto
+        {
+            width: 200px;
+        } 
+        .form
+        {
+            width: 200px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(98, 194, 196);">
+   <center>
+    <a target="_blank" href="sunbeam_index.html"> Home </a>
+    <h1> Registration form</h1>
+    <table>
+        <!--<img src="download.jpeg" alt="">-->
+    <tbody>
+        <form>
+                <tr>
+                    <td>
+                        <label class="form" for="Enter name "> Enter Name :- </label>
+                    </td>
+                    <td>
+                        <input class="form-auto" type="text" name="name" id="text" placeholder="name here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form" for="Enter surname "> Enter Surname :- </label>
+                    </td>
+                    <td>
+                        <input class="form-auto" type="text" name="name" id="text" placeholder="surname here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form" for="Enter birthdate "> Enter Birthdate :- </label>
+                    </td>
+                    <td>
+                        <input class="form-auto" type="date" name="name" id="birthdate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form" for="Enter email "> Enter Email :- </label>
+                    </td>
+                    <td>
+                        <input class="form-auto" type="email" name="name" id="email" placeholder="email here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form" for="Enter password "> Enter password :- </label>
+                    </td>
+                    <td>
+                        <input class="form-auto" type="password" name="name" id="password" placeholder="enter your password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address :-
+                    </td>
+                    <td>
+                        <select id="State">
+                            <option value="1"> Maharashtra </option>
+                            <option value="2"> Gujrat </option>
+                            <option value="3"> Telangana </option>
+                            <option value="4"> Goa </option>
+                            <option value="5"> Uttar Pradesh </option>
+                            <option value="6"> Madhya Pradesh </option>
+                            <option value="7"> Punjab </option>
+                        </select>
+                        <select id="Dist">
+                            <option value="1"> Pune </option>
+                            <option value="2"> Mumbai </option>
+                            <option value="3"> Aurangabad </option>
+                            <option value="4"> Satara </option>
+                            <option value="5"> Kolhapur</option>
+                            <option value="6"> Nashik</option>
+                            <option value="7"> Nanded </option>
+                        </select>
+                        <select id="City">
+                            <option value="1"> Pune </option>
+                            <option value="2"> Pimpri Chinchawad</option>
+                            <option value="3"> Aurangabad - Rural</option>
+                            <option value="4"> Aurangabad - Urban</option>
+                            <option value="5"> Mumbai East</option>
+                            <option value="6"> Mumbai Wedt</option>
+                            <option value="7"> Belgaon </option>
+                        </select> <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dist
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Gender">Gender :- </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio-male">
+                        <label for="radio-male">Male</label>
+                        <input type="radio" name="radio" id="radio-female">
+                        <label for="radio-female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                        <td>Upload Photo:</td>
+                        <td>
+                            <input accept=".image/*" type="file">
+                        </td>  
+                </tr>
+                <tr>
+                    <td>Select Courses</td>
+                    <td>
+                        <select id="Course">
+                        <optgroup label="PG-Diploma Courses">
+                            <option value="1">PG-DAC</option>
+                            <option value="2">PG-DMC</option>
+                            <option value="3">PG-DESD</option>
+                            <option value="4">PG-DBDA</option>
+                        </optgroup>
+                        <optgroup label="Modular courses">
+                            <option value="5">Core java</option>
+                            <option value="6">C++</option>
+                            <option value="7">Big data</option>
+                        </optgroup>
+                        
+                        </select>
+                    </td>
+                    </tr>
+                    <br>
+                <tr>
+                    <td><input type="submit" value="Register"></td>
+                    <td>
+                        
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+        </tbody>
+    </form>
+
+       
+</table>
+   </center>
+</body>
+</html>
