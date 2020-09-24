@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body{
+            background-image: url('images/Payment-Cards.jpg');
+            background-size: cover;
+            color:moccasin;
+        }
+
+        .img-responsive{
+            height: 100px;
+            width: 200px;
+        }
+        label
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1{
+            color:orchid;
+            font-weight: bold;
+            text-shadow: 0 2px 2px #3D2E45;;
+        }
+        #result{
+            color:  rgb(221, 44, 103)  ;
+            background-color: papayawhip;
+            /* background-color: black; */
+            padding: 20px;
+            font-size: 20px;
+            box-shadow: 10px 15px 30px 0 rgb(196, 88, 223);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Assignment 10</h1>
+        <div class="heading">
+        
+            <div class="col-md-3"><h2>Payment Page</h2></div>
+            
+            <div class="col-md-2">
+                <img src="images/mastercard.svg" class="img-responsive img-thumbnail" alt="responsive_image">
+            </div>
+            <div class="col-md-2">
+                <img src="images/visa.png" class="img-responsive img-thumbnail" alt="responsive_image">
+            </div>
+            <div class="col-md-2">
+                <img src="images/gpay.png" class="img-responsive img-thumbnail" alt="responsive_image">
+            </div>
+            <div class="col-md-2">
+                <img src="images/phonepay.png" class="img-responsive img-thumbnail" alt="responsive_image">
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form2">
+                    <h1>Card Details</h1>
+                    <div class="form-group">
+                        <label for="name"> Name On The Card</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter Card Holder Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credit"> Credit Card Number</label>
+                        <input type="number" id="credit" class="form-control" placeholder="Enter Credit Card Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expDate"> Expiration Date</label>
+                        <div class="input-group">
+                            <input type="date" id="expDate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvv"> CVV</label>
+                        <div class="input-group">
+                            <input type="password" id="cvv" class="form-control" placeholder=CVV>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-success" onclick="userInfo()"> Submit </button>
+                        &nbsp; &nbsp;
+                        <button class="btn btn-danger" onclick="userInfo()"> cancel </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>User Information</h1>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function userInfo()
+        {
+            const firstName = document.getElementById('name').value
+            const cardNo = document.getElementById('credit').value
+            const expiDate = document.getElementById('expDate').value
+            const CVVno = document.getElementById('cvv').value
+
+            document.getElementById('result').innerHTML += '<br><strong>Name On The Card - </strong> ' +firstName +"<br>"
+            document.getElementById('result').innerHTML += '<br><strong>Credit Card Number - </strong> ' +cardNo +"<br>";
+            document.getElementById('result').innerHTML += '<br><strong>Expiration Date- </strong> ' +expiDate +"<br>"
+            document.getElementById('result').innerHTML += '<br><strong>CVV- </strong> ' +CVVno +"<br>"
+        
+
+        }
+    </script>
+</body>
+</html>
